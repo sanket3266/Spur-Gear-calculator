@@ -104,7 +104,8 @@ class Spurgear():
         Cv = 0.7625/(1.0167 + self.Vm)
       if (m ** 3) * Cv >= self.m3_Kv:
         break
-    self.Ft = self.Ft_lewis * Cv * m
+    self.Ft = self.Ft_tan/m
+    self.Ft_lew = self.Ft_lewis *Cv*m*m
     self.m = m
     self.Cv = Cv
     self.b = 10 * m
