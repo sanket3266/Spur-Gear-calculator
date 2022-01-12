@@ -129,7 +129,7 @@ def cal():
     elif command == 'g':
         data.module()
         t1 = [data.d1,data.d2]
-        feedback += f'The diameter of pinion is {t1[0]} mm and pinion is {t1[1]} mm'
+        feedback += f'The diameter of pinion is {t1[0]} mm and gear is {t1[1]} mm'
     elif command == 'Quit' or command == 'q':
         return
     else:
